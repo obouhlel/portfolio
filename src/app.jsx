@@ -1,8 +1,8 @@
 import React from "react";
-import Home from './components/home.jsx';
+import Page from './page.jsx';
 
 function App() {
-	return (<Home />);
+	return (<Page />);
 }
 
 export default App;
