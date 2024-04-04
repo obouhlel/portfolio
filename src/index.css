@@ -10,6 +10,14 @@
 
 body {
     font-family: 'Nunito', sans-serif;
+}
+
+body.dark-theme {
     background-color: #11131F;
-    color: #9EB1FF;
+    color: #D6E1FF;
+}
+
+body.light-theme {
+    background-color: #FDFDFE;
+    color: #1F2D5C;
 }
