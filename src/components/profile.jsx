@@ -1,5 +1,3 @@
-/** @format */
-
 import react from "react";
 import clsx from "clsx";
 import { Title, Subtitle } from "./texts.jsx";

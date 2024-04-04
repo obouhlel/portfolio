@@ -14,7 +14,9 @@ function Button({ link, content, mode }) {
 
 	return (
 		<a href={link}>
-			<button className={buttonClass}>{content}</button>
+			<button className={buttonClass}>
+				{content}
+			</button>
 		</a>
 	);
 }
