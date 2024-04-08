@@ -12,7 +12,8 @@ function Profile({ isDarkMode }) {
 	);
 
 	const cardClass = clsx(
-		'flex flex-col md:flex-row items-start p-4 rounded-lg shadow-lg animate-fade-in-up transition-all duration-500 ease-in-out',
+		'flex flex-col md:flex-row items-start p-4 rounded-lg shadow-lg',
+		'animate-drop transition-all duration-500 ease-in-out',
 		isDarkMode ? 'bg-dark-ui-elt-bg' : 'bg-light-ui-elt-bg'
 	);
 
