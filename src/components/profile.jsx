@@ -9,11 +9,10 @@ import Avatar from './avatar.jsx';
 function Profile({ isDarkMode }) {
 	const profileClass = clsx(
 		'flex items-center justify-center min-h-screen',
-		isDarkMode ? 'bg-dark-app-bg' : 'bg-light-app-bg'
 	);
 
 	const cardClass = clsx(
-		'flex flex-col md:flex-row items-start p-4 rounded-lg shadow-lg',
+		'flex flex-col md:flex-row items-start p-4 rounded-lg shadow-lg animate-fade-in-up transition-all duration-500 ease-in-out',
 		isDarkMode ? 'bg-dark-ui-elt-bg' : 'bg-light-ui-elt-bg'
 	);
 

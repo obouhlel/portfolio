@@ -11,10 +11,10 @@ function Page({isDarkMode}) {
 	return (
 		<>
 			<Profile isDarkMode={isDarkMode} />
-			<Aboutme isDarkMode={isDarkMode} />
+			{/* <Aboutme isDarkMode={isDarkMode} />
 			<Skills isDarkMode={isDarkMode} />
 			<Projects isDarkMode={isDarkMode} />
-			<Contact isDarkMode={isDarkMode} />
+			<Contact isDarkMode={isDarkMode} /> */}
 		</>
 	);
 }

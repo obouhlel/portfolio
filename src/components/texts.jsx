@@ -5,7 +5,7 @@ import clsx from 'clsx';
 
 function Title({ isDarkMode, content }) {
 	const titleClass = clsx(
-		'text-4xl',
+		'text-4xl font-bold transition-colors duration-300 ease-in-out',
 		isDarkMode ? 'text-dark-high-contrast-text' : 'text-light-high-contrast-text'
 	);
 
@@ -14,7 +14,7 @@ function Title({ isDarkMode, content }) {
 
 function Subtitle({ isDarkMode, content }) {
 	const subtitleClass = clsx(
-		'text-xl',
+		'text-xl font-semibold transition-colors duration-300 ease-in-out',
 		isDarkMode ? 'text-dark-low-contrast-text' : 'text-light-low-contrast-text',
 	);
 
