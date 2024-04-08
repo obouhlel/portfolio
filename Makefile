@@ -5,13 +5,13 @@ all: $(NODE_MODULES_DIR)
 	@echo "Building..."
 	@npm run build
 
-$(BUILD_DIR): $(NODE_MODULES_DIR)
-	@echo "Building..."
-	@npm run build
-
 $(NODE_MODULES_DIR):
 	@echo "Installing dependencies..."
 	@npm install
+
+build: $(NODE_MODULES_DIR)
+	@echo "Building..."
+	@npm run build
 
 deploy: $(BUILD_DIR)
 	@echo "Deploying..."

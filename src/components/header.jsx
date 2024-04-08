@@ -23,8 +23,9 @@ function Header({ isDarkMode, toggleTheme }) {
     );
 
     const menu_list = clsx(
-        'absolute top-16 left-0 sm:top-0 w-full h-auto sm:w-auto sm:h-16',
+        'fixed top-16 left-0 sm:top-0 w-full h-auto sm:w-auto sm:h-16',
         'overflow-y-auto flex flex-col items-center text-center sm:flex-row',
+        'transition-all duration-300 ease-in-out',
         isOpen ? 'flex' : 'hidden sm:flex',
         isDarkMode ? 'bg-dark-ui-elt-bg sm:bg-transparent' : 'bg-light-ui-elt-bg sm:bg-transparent',
         isDarkMode ? 'border-b border-dark-ui-elt-border sm:border-b-0' : 'border-b border-light-ui-elt-border sm:border-b-0',
