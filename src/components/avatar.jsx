@@ -1,4 +1,6 @@
-import react from "react";
+/** @format */
+
+import react from 'react';
 
 function Avatar() {
 	return (

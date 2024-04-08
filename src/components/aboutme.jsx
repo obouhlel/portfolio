@@ -1,18 +1,27 @@
-import react from "react";
-import clsx from "clsx";
-import { Title, Subtitle } from "./texts.jsx";
+/** @format */
 
-function Aboutme({ mode }) {
-	const aboutmeClass = clsx({
-		"min-h-screen": true,
-		"bg-dark-app-bg": mode === "dark",
-		"bg-light-app-bg": mode === "light",
-	});
+import react from 'react';
+import clsx from 'clsx';
+import { Title, Subtitle } from './texts.jsx';
+
+function Aboutme({ isDarkMode }) {
+	const aboutmeClass = clsx(
+		'min-h-screen',
+		isDarkMode ? 'bg-dark-app-bg' : 'bg-light-app-bg'
+	);
 
 	return (
 		<div className={aboutmeClass}>
-            <Title mode={mode} content='About Me' />
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam illo accusamus saepe dolor ipsam possimus quidem quisquam delectus aliquid. Voluptatum, non harum? Dicta inventore alias dignissimos delectus quaerat, atque quidem.</p>
+			<Title
+				isDarkMode={isDarkMode}
+				content='About Me'
+			/>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam illo
+				accusamus saepe dolor ipsam possimus quidem quisquam delectus aliquid.
+				Voluptatum, non harum? Dicta inventore alias dignissimos delectus
+				quaerat, atque quidem.
+			</p>
 		</div>
 	);
 }

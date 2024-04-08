@@ -1,24 +1,22 @@
 /** @format */
 
-import React from "react";
-import clsx from "clsx";
+import React from 'react';
+import clsx from 'clsx';
 
-function Title({ mode, content }) {
-	const titleClass = clsx({
-		"text-4xl": true,
-		"text-dark-high-contrast-text": mode === "dark",
-		"text-light-high-contrast-text": mode === "light",
-	});
+function Title({ isDarkMode, content }) {
+	const titleClass = clsx(
+		'text-4xl',
+		isDarkMode ? 'text-dark-high-contrast-text' : 'text-light-high-contrast-text'
+	);
 
 	return <h1 className={titleClass}>{content}</h1>;
 }
 
-function Subtitle({ mode, content }) {
-	const subtitleClass = clsx({
-		"text-xl": true,
-		"text-dark-low-contrast-text": mode === "dark",
-		"text-light-low-contrast-text": mode === "light",
-	});
+function Subtitle({ isDarkMode, content }) {
+	const subtitleClass = clsx(
+		'text-xl',
+		isDarkMode ? 'text-dark-low-contrast-text' : 'text-light-low-contrast-text',
+	);
 
 	return <h2 className={subtitleClass}>{content}</h2>;
 }

@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
+	font-family: 'Nunito', sans-serif;
 }
 
 body.dark-theme {
-    background-color: #11131F;
-    color: #D6E1FF;
+	background-color: #11131F;
+	color: #D6E1FF;
 }
 
 body.light-theme {
-    background-color: #FDFDFE;
-    color: #1F2D5C;
+	background-color: #FDFDFE;
+	color: #1F2D5C;
 }
