@@ -44,7 +44,7 @@ export default {
 				},
 			},
 			animation: {
-				drop: 'drop 0.5s ease-in-out',
+				drop: 'drop 0.3s ease-in-out',
 			},
 		},
 	},

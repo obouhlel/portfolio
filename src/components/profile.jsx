@@ -12,9 +12,11 @@ function Profile({ isDarkMode }) {
 	);
 
 	const cardClass = clsx(
-		'flex flex-col md:flex-row items-start p-4 rounded-lg shadow-lg',
-		'animate-drop transition-all duration-500 ease-in-out',
-		isDarkMode ? 'bg-dark-ui-elt-bg' : 'bg-light-ui-elt-bg'
+		'flex flex-col md:flex-row items-start p-4 md:p-8 rounded-lg',
+		'border border-solid',
+		'animate-drop transition-all duration-300 ease-in-out',
+		isDarkMode ? 'bg-dark-ui-elt-bg' : 'bg-light-ui-elt-bg',
+		isDarkMode ? 'border-dark-ui-elt-border' : 'border-light-ui-elt-border',
 	);
 
 	return (
@@ -24,7 +26,7 @@ function Profile({ isDarkMode }) {
 				<div className='md:ml-4 mt-4 md:mt-0'>
 					<Title
 						isDarkMode={isDarkMode}
-						content='Oussama Bouhlel'
+						content='Oussama BOUHLEL'
 					/>
 					<Subtitle
 						isDarkMode={isDarkMode}

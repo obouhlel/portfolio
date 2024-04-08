@@ -5,7 +5,7 @@ import clsx from 'clsx';
 
 function Title({ isDarkMode, content }) {
 	const titleClass = clsx(
-		'text-4xl font-bold transition-colors duration-500 ease-in-out',
+		'text-4xl font-bold transition-colors duration-300 ease-in-out',
 		isDarkMode ? 'text-dark-high-contrast-text' : 'text-light-high-contrast-text'
 	);
 
@@ -14,11 +14,20 @@ function Title({ isDarkMode, content }) {
 
 function Subtitle({ isDarkMode, content }) {
 	const subtitleClass = clsx(
-		'text-xl font-semibold transition-colors duration-500 ease-in-out',
+		'text-xl font-semibold transition-colors duration-300 ease-in-out',
 		isDarkMode ? 'text-dark-low-contrast-text' : 'text-light-low-contrast-text',
 	);
 
 	return <h2 className={subtitleClass}>{content}</h2>;
 }
 
-export { Title, Subtitle };
+function Link({ isDarkMode, content, link }) {
+	const linkClass = clsx(
+		'text-lg font-semibold transition-colors duration-300 ease-in-out',
+		isDarkMode ? 'text-dark-high-contrast-text hover:text-dark-low-contrast-text' : 'text-light-solid-bg',
+	);
+
+	return <a href={link} className={linkClass}>{content}</a>;
+}
+
+export { Title, Subtitle, Link };
