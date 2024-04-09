@@ -20,6 +20,7 @@ function Skills({ isDarkMode }) {
 			<Title
 				isDarkMode={isDarkMode}
 				content='Skills'
+				style='text-center'
 			/>
 			<p>
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam illo

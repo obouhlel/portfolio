@@ -10,7 +10,7 @@ function Contact({ isDarkMode }) {
 	const [state, handleSubmit] = useForm('xjvnpwzn');
 
 	const contactClass = clsx(
-		'min-h-screen pt-20 pl-4 pr-4 pb-10',
+		'min-h-screen pt-20 px-4 pb-10',
 		isDarkMode ? 'bg-dark-app-bg' : 'bg-light-app-bg',
 	);
 
@@ -20,6 +20,7 @@ function Contact({ isDarkMode }) {
 				<Title
 					isDarkMode={isDarkMode}
 					content='Contact'
+					style='text-center'
 				/>
 				<Subtitle
 					isDarkMode={isDarkMode}
@@ -34,6 +35,7 @@ function Contact({ isDarkMode }) {
 			<Title
 				isDarkMode={isDarkMode}
 				content='Contact'
+				style='text-center'
 			/>
 			<ContactForm onSubmit={handleSubmit} state={state} isDarkMode={isDarkMode} />
 		</div>

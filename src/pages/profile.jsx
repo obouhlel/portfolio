@@ -27,10 +27,12 @@ function Profile({ isDarkMode }) {
                     <Title
                         isDarkMode={isDarkMode}
                         content='Oussama BOUHLEL'
+                        style='text-center'
                     />
                     <Subtitle
                         isDarkMode={isDarkMode}
                         content='Software developer'
+                        style='text-center'
                     />
 					<div className='mt-4 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-2'>
 						<ButtonLink

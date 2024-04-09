@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "name": "ft_transcendence",
+        "description": "The project is a website that allows users to play pong or tictactoe against each other, with matchmaking and tournament.",
+        "url": "https://github.com/obouhlel/ft_transcendence",
+        "languages": ["Python", "JavaScript", "HTML", "CSS", "SQL"],
+        "frameworks": ["Django"],
+        "tools": ["Docker", "Nginx", "PostgreSQL", "Websockets", "Signal"],
+        "image": ["/portfolio/ft_transcendence.png"]
+    },
+    {
+        "id": "2",
+        "name": "minishell",
+        "description": "The project is a simple shell that can execute commands with arguments, manage environment variables, and handle signals.",
+        "url": "https://github.com/obouhlel/minishell",
+        "languages": ["C"],
+        "frameworks": [],
+        "tools": [],
+        "image": ["/portfolio/minishell.png"]
+    },
+    {
+        "id": "3",
+        "name": "push_swap",
+        "description": "The project is a sorting algorithm that sorts a list of integers using two stacks and a limited set of operations.",
+        "url": "https://github.com/obouhlel/push-swap",
+        "languages": ["C"],
+        "frameworks": [],
+        "tools": [],
+        "image": ["/portfolio/push_swap.png"]
+    }
+]

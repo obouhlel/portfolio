@@ -15,6 +15,7 @@ function Aboutme({ isDarkMode }) {
 			<Title
 				isDarkMode={isDarkMode}
 				content='About Me'
+				style='text-center'
 			/>
 			<p>
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam illo

@@ -3,10 +3,12 @@
 import React from 'react';
 import clsx from 'clsx';
 import { Title, Subtitle } from '../components/texts.jsx';
+import projects from '../data/projects.json';
+import ProjectCard from '../components/projectCard.jsx';
 
 function Projects({ isDarkMode }) {
 	const projectClass = clsx(
-		'min-h-screen pt-20 pl-4 pr-4',
+		'min-h-screen pt-20 px-4',
 		isDarkMode ? 'bg-dark-app-bg' : 'bg-light-app-bg'
 	);
 
@@ -15,13 +17,17 @@ function Projects({ isDarkMode }) {
 			<Title
 				isDarkMode={isDarkMode}
 				content='Projects'
+				style='text-center'
 			/>
-			<p>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam illo
-				accusamus saepe dolor ipsam possimus quidem quisquam delectus aliquid.
-				Voluptatum, non harum? Dicta inventore alias dignissimos delectus
-				quaerat, atque quidem.
-			</p>
+			<div className='flex flex-col sm:flex-row justify-center'>
+				{projects.map((project) => (
+					<ProjectCard
+						key={project.id}
+						project={project}
+						isDarkMode={isDarkMode}
+					/>
+				))}
+			</div>
 		</div>
 	);
 }

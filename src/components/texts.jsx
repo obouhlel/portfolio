@@ -3,9 +3,10 @@
 import React from 'react';
 import clsx from 'clsx';
 
-function Title({ isDarkMode, content }) {
+function Title({ isDarkMode, content, style }) {
 	const titleClass = clsx(
-		'text-4xl font-bold text-center sm:text-left',
+		style,
+		'text-4xl font-bold',
 		'transition-colors duration-300 ease-in-out',
 		isDarkMode ? 'text-dark-high-contrast-text' : 'text-light-high-contrast-text'
 	);
@@ -13,9 +14,10 @@ function Title({ isDarkMode, content }) {
 	return <h1 className={titleClass}>{content}</h1>;
 }
 
-function Subtitle({ isDarkMode, content }) {
+function Subtitle({ isDarkMode, content, style }) {
 	const subtitleClass = clsx(
-		'text-xl font-semibold text-center sm:text-left',
+		style,
+		'text-xl font-semibold',
 		'transition-colors duration-300 ease-in-out',
 		isDarkMode ? 'text-dark-low-contrast-text' : 'text-light-low-contrast-text',
 	);
@@ -23,10 +25,11 @@ function Subtitle({ isDarkMode, content }) {
 	return <h2 className={subtitleClass}>{content}</h2>;
 }
 
-function Link({ isDarkMode, content, link }) {
+function Link({ isDarkMode, content, link, style }) {
 	const linkClass = clsx(
+		style,
 		'text-lg font-semibold transition-colors duration-300 ease-in-out',
-		isDarkMode ? 'text-dark-high-contrast-text hover:text-dark-low-contrast-text' : 'text-light-solid-bg',
+		isDarkMode ? 'text-dark-high-contrast-text hover:text-dark-low-contrast-text' : 'text-light-low-contrast-text hover:text-light-high-contrast-text',
 	);
 
 	return <a href={link} className={linkClass}>{content}</a>;
