@@ -7,9 +7,9 @@ import { ButtonForm } from './button.jsx';
 
 function ContactForm({ onSubmit, state, isDarkMode }) {
 	const formClass = clsx(
-		'flex flex-col items-left p-4 mt-5 rounded-lg space-y-4 border-2 border-solid',
+		'flex flex-col items-left p-4 mt-5 rounded-lg space-y-4 border-2 border-solid w-full h-auto',
 		isDarkMode ? 'bg-dark-ui-elt-bg' : 'bg-light-ui-elt-bg',
-        isDarkMode ? 'border-dark-ui-elt-border' : 'border-light-ui-elt-border',
+		isDarkMode ? 'border-dark-ui-elt-border' : 'border-light-ui-elt-border'
 	);
 
 	return (
@@ -28,7 +28,7 @@ function ContactForm({ onSubmit, state, isDarkMode }) {
 					id='name'
 					type='text'
 					name='name'
-					className='p-2 border border-solid rounded-lg text-light-high-contrast-text'
+					className='p-2 border border-solid rounded-lg text-light-high-contrast-text w-full'
 				/>
 				<label
 					htmlFor='email'
@@ -39,7 +39,7 @@ function ContactForm({ onSubmit, state, isDarkMode }) {
 					id='email'
 					type='email'
 					name='email'
-					className='p-2 border border-solid rounded-lg text-light-high-contrast-text'
+					className='p-2 border border-solid rounded-lg text-light-high-contrast-text w-full'
 				/>
 				<ValidationError
 					prefix='Email'
@@ -55,7 +55,7 @@ function ContactForm({ onSubmit, state, isDarkMode }) {
 					id='subject'
 					type='text'
 					name='subject'
-					className='p-2 border border-solid rounded-lg text-light-high-contrast-text'
+					className='p-2 border border-solid rounded-lg text-light-high-contrast-text w-full'
 				/>
 			</div>
 			<label
@@ -66,7 +66,7 @@ function ContactForm({ onSubmit, state, isDarkMode }) {
 			<textarea
 				id='message'
 				name='message'
-				className='p-2 border border-solid rounded-lg w-full h-full text-light-high-contrast-text'
+				className='p-2 border border-solid rounded-lg w-full h-40 text-light-high-contrast-text resize-y'
 			/>
 			<ValidationError
 				prefix='Message'
