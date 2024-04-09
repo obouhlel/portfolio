@@ -6,7 +6,7 @@ import { Title, Subtitle } from '../components/texts.jsx';
 
 function Aboutme({ isDarkMode }) {
 	const aboutmeClass = clsx(
-		'min-h-screen pt-20',
+		'min-h-screen pt-20 pl-4 pr-4',
 		isDarkMode ? 'bg-dark-app-bg' : 'bg-light-app-bg'
 	);
 

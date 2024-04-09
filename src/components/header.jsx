@@ -1,10 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { MenuIcon, XIcon } from '@heroicons/react/solid';
 import ThemeToggleButton from './theme.jsx';
 import clsx from 'clsx';
 
 function Header({ isDarkMode, toggleTheme }) {
     const [isOpen, setIsOpen] = useState(false);
+    const navRef = useRef(null);
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (navRef.current && !navRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [navRef]);
 
     const headerClass = clsx(
         'fixed top-0 left-0 w-full h-16 border-b border-solid',
@@ -48,7 +62,7 @@ function Header({ isDarkMode, toggleTheme }) {
                 </button>
                 <ThemeToggleButton isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
             </header>
-            <nav className={menuListClass}>
+            <nav ref={navRef} className={menuListClass}>
                 <a className={menuEltClass} href="#home">
                     Home
                 </a>

@@ -2,13 +2,13 @@
 
 import React from 'react';
 import clsx from 'clsx';
-import Button from '../components/button.jsx';
+import { ButtonLink } from '../components/button.jsx';
 import Avatar from '../components/avatar.jsx';
 import { Title, Subtitle } from '../components/texts.jsx';
 
 function Profile({ isDarkMode }) {
     const profileClass = clsx(
-        'flex items-center justify-center min-h-screen pt-16',
+        'flex items-center justify-center min-h-screen pt-16 pl-4 pr-4',
     );
 
     const cardClass = clsx(
@@ -33,22 +33,22 @@ function Profile({ isDarkMode }) {
                         content='Software developer'
                     />
 					<div className='mt-4 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-2'>
-						<Button
+						<ButtonLink
 							link='https://github.com/obouhlel'
 							content='Github'
 							isDarkMode={isDarkMode}
 						/>
-						<Button
+						<ButtonLink
 							link='https://www.linkedin.com/in/oussama-bouhlel-7a9152294/'
-							content='LinkedIn'
+							content='Linked In'
 							isDarkMode={isDarkMode}
 						/>
-						<Button
+						<ButtonLink
 							link='/portfolio/CV_BOUHLEL_Oussama.pdf'
 							content='CV EN'
 							isDarkMode={isDarkMode}
 						/>
-						<Button
+						<ButtonLink
 							link='/portfolio/CV_BOUHLEL_Oussama.pdf'
 							content='CV FR'
 							isDarkMode={isDarkMode}
