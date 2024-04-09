@@ -1,12 +1,12 @@
 /** @format */
 
-import react from 'react';
+import React from 'react';
 import clsx from 'clsx';
-import { Title, Subtitle } from './texts.jsx';
+import { Title, Subtitle } from '../components/texts.jsx';
 
 function Skills({ isDarkMode }) {
 	const skillClass = clsx(
-		'min-h-screen',
+		'min-h-screen pt-20',
 		isDarkMode ? 'bg-dark-app-bg' : 'bg-light-app-bg'
 	);
 
