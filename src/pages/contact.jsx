@@ -15,7 +15,18 @@ function Contact({ isDarkMode }) {
 	);
 
 	if (state.succeeded) {
-		return <p className="mt-20">Thanks for joining!</p>;
+		return (
+			<div className={contactClass}>
+				<Title
+					isDarkMode={isDarkMode}
+					content='Contact'
+				/>
+				<Subtitle
+					isDarkMode={isDarkMode}
+					content='Thanks for reaching out! I will get back to you as soon as possible.'
+				/>
+			</div>
+		);
 	}
 
 	return (
