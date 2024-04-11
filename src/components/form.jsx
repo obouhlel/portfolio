@@ -40,6 +40,7 @@ function ContactForm({ onSubmit, state, isDarkMode }) {
 					type='email'
 					name='email'
 					className='p-2 border border-solid rounded-lg text-light-high-contrast-text w-full'
+					required
 				/>
 				<ValidationError
 					prefix='Email'
@@ -56,6 +57,7 @@ function ContactForm({ onSubmit, state, isDarkMode }) {
 					type='text'
 					name='subject'
 					className='p-2 border border-solid rounded-lg text-light-high-contrast-text w-full'
+					required
 				/>
 			</div>
 			<label

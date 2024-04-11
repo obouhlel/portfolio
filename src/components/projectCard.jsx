@@ -6,7 +6,7 @@ import { Title, Subtitle, Link } from './texts.jsx';
 
 function ProjectCard({ project, isDarkMode }) {
     const badgesClass = clsx(
-        'px-2 py-1 rounded-full border border-solid mx-1 my-1',
+        'px-4 py-2 rounded-full border border-solid mx-1 my-1',
         isDarkMode ? 'bg-dark-app-bg' : 'bg-light-app-bg',
         isDarkMode ? 'border-dark-ui-elt-border' : 'border-light-ui-elt-border'
     );
