@@ -100,6 +100,9 @@ function Skills({ isDarkMode }) {
 							Python <StarRating rating='3' />
 						</li>
 						<li className={liClass}>
+							Makefiles <StarRating rating='3' />
+						</li>
+						<li className={liClass}>
 							HTML/CSS <StarRating rating='2' />
 						</li>
 						<li className={liClass}>
