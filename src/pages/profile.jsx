@@ -35,6 +35,11 @@ function Profile({ isDarkMode }) {
                         style='text-center'
                     />
 					<div className='mt-4 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-2'>
+                        <ButtonLink
+                            link='mailto:oussama_bouhlel@outlook.fr'
+                            content='Email'
+                            isDarkMode={isDarkMode}
+                        />
 						<ButtonLink
 							link='https://github.com/obouhlel'
 							content='Github'

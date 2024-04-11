@@ -12,7 +12,7 @@ function ProjectCard({ project, isDarkMode }) {
     );
 
     const cardClass = clsx(
-        'w-96 h-full p-4 m-4 rounded-lg border border-solid flex flex-col',
+        'w-full sm:w-96 h-full p-4 m-4 rounded-lg border border-solid flex flex-col',
         isDarkMode ? 'bg-dark-ui-elt-bg' : 'bg-light-ui-elt-bg',
         isDarkMode ? 'border-dark-ui-elt-border' : 'border-light-ui-elt-border'
     );

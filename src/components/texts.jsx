@@ -28,7 +28,7 @@ function Subtitle({ isDarkMode, content, style }) {
 function Link({ isDarkMode, content, link, style }) {
 	const linkClass = clsx(
 		style,
-		'text-lg font-semibold transition-colors duration-300 ease-in-out',
+		'text-lg underline font-semibold transition-colors duration-300 ease-in-out',
 		isDarkMode ? 'text-dark-high-contrast-text hover:text-dark-low-contrast-text' : 'text-light-low-contrast-text hover:text-light-high-contrast-text',
 	);
 

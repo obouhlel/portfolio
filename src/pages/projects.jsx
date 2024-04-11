@@ -8,7 +8,7 @@ import ProjectCard from '../components/projectCard.jsx';
 
 function Projects({ isDarkMode }) {
 	const projectClass = clsx(
-		'min-h-screen pt-20 px-4',
+		'min-h-screen pt-20 px-0 sm:px-2',
 		isDarkMode ? 'bg-dark-app-bg' : 'bg-light-app-bg'
 	);
 
@@ -19,7 +19,7 @@ function Projects({ isDarkMode }) {
 				content='Projects'
 				style='text-center'
 			/>
-			<div className='flex flex-col sm:flex-row justify-center'>
+			<div className='flex flex-col sm:flex-row justify-center items-center mx-2'>
 				{projects.map((project) => (
 					<ProjectCard
 						key={project.id}
