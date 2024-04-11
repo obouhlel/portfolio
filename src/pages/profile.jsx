@@ -31,9 +31,12 @@ function Profile({ isDarkMode }) {
                     />
                     <Subtitle
                         isDarkMode={isDarkMode}
-                        content='Software developer'
+                        content='Software developer | Paris, France'
                         style='text-center'
                     />
+                    <h3 className='text-lg italic text-center'>
+                        <span className="underline">Status :</span> Seeking a 6-month internship as a developer
+                    </h3>
 					<div className='mt-4 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-2'>
                         <ButtonLink
                             link='mailto:oussama_bouhlel@outlook.fr'
@@ -51,12 +54,12 @@ function Profile({ isDarkMode }) {
 							isDarkMode={isDarkMode}
 						/>
 						<ButtonLink
-							link='/portfolio/CV_BOUHLEL_Oussama.pdf'
+							link='/portfolio/Oussama_BOUHLEL_CV_EN.pdf'
 							content='CV EN'
 							isDarkMode={isDarkMode}
 						/>
 						<ButtonLink
-							link='/portfolio/CV_BOUHLEL_Oussama.pdf'
+							link='/portfolio/Oussama_BOUHLEL_CV_FR.pdf'
 							content='CV FR'
 							isDarkMode={isDarkMode}
 						/>

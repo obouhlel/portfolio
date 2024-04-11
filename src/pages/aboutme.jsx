@@ -47,16 +47,6 @@ function AboutmeText({ isDarkMode }) {
 			</p>
 			<Subtitle
 				isDarkMode={isDarkMode}
-				content='What am I looking for?'
-				style='text-center pt-2 pb-4'
-			/>
-			<p className={paraText}>
-				At the moment I am looking for an internship in the field of electronics
-				or/and programming. I am looking for a company that will allow me to
-				learn and grow in the field of electronics or/and programming.
-			</p>
-			<Subtitle
-				isDarkMode={isDarkMode}
 				content='What are my qualities?'
 				style='text-center pt-2 pb-4'
 			/>
@@ -74,6 +64,12 @@ function AboutmeText({ isDarkMode }) {
 				<Link
 					content='Mod Pod Racing'
 					link='https://www.codingame.com/multiplayer/bot-programming/mad-pod-racing'
+					isDarkMode={isDarkMode}
+				/>
+				. You can found my code on{' '}
+				<Link
+					content='Github'
+					link='https://github.com/obouhlel/coding_games'
 					isDarkMode={isDarkMode}
 				/>
 				.

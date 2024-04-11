@@ -6,8 +6,7 @@
         "url": "https://github.com/obouhlel/ft_transcendence",
         "languages": ["Python", "JavaScript", "HTML", "CSS", "SQL"],
         "frameworks": ["Django"],
-        "tools": ["Docker", "Nginx", "PostgreSQL", "Websockets", "Signal"],
-        "image": ["/portfolio/ft_transcendence.png"]
+        "tools": ["Docker", "Nginx", "PostgreSQL", "Websockets", "Signal"]
     },
     {
         "id": "2",
@@ -16,8 +15,7 @@
         "url": "https://github.com/obouhlel/minishell",
         "languages": ["C"],
         "frameworks": [],
-        "tools": [],
-        "image": ["/portfolio/minishell.png"]
+        "tools": []
     },
     {
         "id": "3",
@@ -26,7 +24,6 @@
         "url": "https://github.com/obouhlel/push-swap",
         "languages": ["C"],
         "frameworks": [],
-        "tools": [],
-        "image": ["/portfolio/push_swap.png"]
+        "tools": []
     }
 ]
