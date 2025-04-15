@@ -2,8 +2,24 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { AuroraBackground } from "@/components/ui/aurora-background";
+import { FloatingDock } from "@/components/ui/floating-dock";
+import { Item } from "@/types/Item";
+import { Github, Linkedin } from "lucide-react";
 
 export default function Home() {
+  const items: Array<Item> = [
+    {
+      title: "Github",
+      icon: <Github className="text-black dark:text-white" />,
+      href: "https://github.com/obouhlel",
+    },
+    {
+      title: "Linkedin",
+      icon: <Linkedin className="text-black dark:text-white" />,
+      href: "https://www.linkedin.com/in/oussama-bouhlel-7a9152294/",
+    },
+  ];
+
   return (
     <AuroraBackground>
       <motion.div
@@ -26,6 +42,11 @@ export default function Home() {
           Développement en cours...
         </div>
       </motion.div>
+      <FloatingDock
+        items={items}
+        desktopClassName="fixed bottom-5"
+        mobileClassName="fixed bottom-5 right-5"
+      />
     </AuroraBackground>
   );
 }
