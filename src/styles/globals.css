@@ -2,6 +2,7 @@
 @import "tw-animate-css";
 
 @import "./aurora.css";
+@import "./form.css";
 
 @custom-variant dark (&:where(.dark, .dark *));
 

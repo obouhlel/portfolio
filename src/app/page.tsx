@@ -5,6 +5,7 @@ import { AuroraBackground } from "@/components/ui/aurora-background";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import { Item } from "@/types/Item";
 import { Github, Linkedin } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const items: Array<Item> = [
@@ -40,6 +41,20 @@ export default function Home() {
         </div>
         <div className="text-sm md:text-lg font-light text-center dark:text-neutral-200">
           Développement en cours...
+        </div>
+        <div className="flex gap-3 mt-4">
+          <Button variant="primary" className="hidden md:flex">
+            <a href="/parcours">Mon Parcours</a>
+          </Button>
+          <Button variant="primary" className="hidden md:flex">
+            <a href="/projets">Mes Projets</a>
+          </Button>
+          <Button variant="primary" className="hidden md:flex">
+            <a href="/skills">Mes Compétances</a>
+          </Button>
+          <Button variant="primary" className="hidden md:flex">
+            <a href="/contacts">Me contacter</a>
+          </Button>
         </div>
       </motion.div>
       <FloatingDock
