@@ -14,7 +14,7 @@ export default function Header() {
   }
 
   return (
-    <header className="fixed top-0 left-0 w-full h-16 flex items-center justify-between border-b-2 dark:bg-gray-800 bg-gray-200 z-50">
+    <header className="fixed top-0 left-0 w-full h-16 flex items-center justify-between border-b-2 dark:bg-gray-800/50 bg-gray-200/50 z-50">
       <div className="mx-3">
         <h1 className="text-2xl font-bold">Oussama BOUHLEL</h1>
       </div>

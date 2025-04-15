@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@import "./aurora.css";
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
@@ -119,17 +121,5 @@
   }
   body {
     @apply bg-background text-foreground;
-  }
-}
-
-@theme inline {
-  --animate-aurora: aurora 60s linear infinite;
-  @keyframes aurora {
-    from {
-      background-position: 50% 50%, 50% 50%;
-    }
-    to {
-      background-position: 350% 50%, 350% 50%;
-    }
   }
 }

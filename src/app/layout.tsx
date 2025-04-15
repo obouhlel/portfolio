@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { ThemeScript } from "@/components/theme/theme-script";
-import "./globals.css";
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Oussama BOUHLEL | Portfolio",
