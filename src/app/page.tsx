@@ -10,12 +10,12 @@ export default function Home() {
   const items: Array<Item> = [
     {
       title: "Github",
-      icon: <Github className="text-black dark:text-white" />,
+      icon: <Github className="text-black dark:text-white h-full w-full" />,
       href: "https://github.com/obouhlel",
     },
     {
       title: "Linkedin",
-      icon: <Linkedin className="text-black dark:text-white" />,
+      icon: <Linkedin className="text-black dark:text-white h-full w-full" />,
       href: "https://www.linkedin.com/in/oussama-bouhlel-7a9152294/",
     },
   ];
