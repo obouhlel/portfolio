@@ -3,6 +3,7 @@
 
 @import "./aurora.css";
 @import "./form.css";
+@import "./background.css";
 
 @custom-variant dark (&:where(.dark, .dark *));
 

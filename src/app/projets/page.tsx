@@ -1,10 +1,37 @@
 "use client";
+import React from "react";
+import { ProjectCard } from "@/components/ui/project-card";
+
 export default function Page() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
-        Mes projets
+    <>
+      <div className="max-w-5xl mx-auto px-8 flex items-center justify-center flex-col min-h-screen z-10">
+        <h1 className="text-5xl font-bold text-center mb-8 text-white">
+          Mes projets
+        </h1>
+        <ProjectCard items={projects} />
       </div>
-    </div>
+    </>
   );
 }
+
+export const projects = [
+  {
+    title: "Hypertube",
+    description: "Description du projet",
+    image: "/images/hypertube.png",
+    link: "https://hypertube.obouhlel.xyz",
+  },
+  {
+    title: "Hypertube",
+    description: "Description du projet",
+    image: "/images/hypertube.png",
+    link: "https://hypertube.obouhlel.xyz",
+  },
+  {
+    title: "Hypertube",
+    description: "Description du projet",
+    image: "/images/hypertube.png",
+    link: "https://hypertube.obouhlel.xyz",
+  },
+];
