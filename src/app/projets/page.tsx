@@ -5,7 +5,7 @@ import React from "react";
 export default function Page() {
   return (
     <>
-      <div className="max-w-5xl mx-auto px-8 flex items-center justify-center flex-col min-h-screen z-10">
+      <div className="max-w-5xl mx-auto px-8 flex items-center justify-center flex-col min-h-screen z-50">
         <h1 className="text-5xl font-bold text-white text-center mb-8">
           Mes projets
         </h1>
@@ -16,7 +16,16 @@ export default function Page() {
           </h2>
           <p className="text-gray-300">
             Cette section est actuellement en construction. Revenez bientôt pour
-            découvrir mes projets !
+            découvrir mes projets ! Vous pouvez consulter mon{" "}
+            <a
+              href="https://github.com/obouhlel"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              GitHub
+            </a>{" "}
+            pour voir mes projets en cours.
           </p>
         </div>
       </div>
