@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { ThemeScript } from "@/components/theme/theme-script";
-import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import "@/styles/globals.css";
 
@@ -23,12 +22,10 @@ export default function RootLayout({
       </head>
       <body>
         <ThemeProvider>
-          <BackgroundGradientAnimation className="min-h-screen">
-            <Header />
-            <main className="text-white">{children}</main>
-          </BackgroundGradientAnimation>
+          <BackgroundBeams className="fixed" />
+          <Header />
+          <main className="text-white">{children}</main>
         </ThemeProvider>
-        <BackgroundBeams />
       </body>
     </html>
   );
