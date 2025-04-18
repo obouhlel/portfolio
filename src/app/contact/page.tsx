@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <>
       <div className="flex flex-col items-center justify-center h-screen px-4">
-        <div className="text-3xl md:text-7xl font-bold text-white text-center mb-8">
+        <div className="text-5xl font-bold text-white text-center mb-8">
           Me contacter
         </div>
         <form
@@ -43,10 +43,7 @@ export default function Page() {
               className="shadow-input dark:placeholder-text-neutral-600 flex h-32 w-full rounded-md border-none bg-gray-50 px-3 py-2 text-sm text-white transition duration-400 placeholder:text-neutral-400 focus-visible:ring-[2px] focus-visible:ring-neutral-400 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-800 dark:shadow-[0px_0px_1px_1px_#404040] dark:focus-visible:ring-neutral-600"
             />
           </div>
-          <button
-            type="submit"
-            className="mt-4 rounded-md bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-2 text-white font-medium hover:from-purple-600 hover:to-pink-600 transition"
-          >
+          <button className="w-full text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
             Envoyer
           </button>
         </form>
