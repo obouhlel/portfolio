@@ -52,6 +52,9 @@ export default function Page() {
               <h2 className="text-2xl font-semibold text-black dark:text-white mb-2 text-center">
                 Hypertube
               </h2>
+              <p className="text-red-700 dark:text-red-400 text-center italic">
+                Projet en cours
+              </p>
               <p className="text-black dark:text-white text-left">
                 Hypertube est un projet de plateforme de streaming vidéo.
               </p>
