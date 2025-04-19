@@ -34,8 +34,11 @@ export default function Home() {
         <div className="text-3xl md:text-7xl font-bold text-white text-center">
           Oussama BOUHLEL
         </div>
-        <div className="font-extralight text-base md:text-4xl text-neutral-200 py-4">
-          Développeur Logiciel
+        <div className="font-extralight max-w-[80vw] text-base md:text-4xl text-neutral-200 py-4 text-center">
+          Actuellement à la recherche d&apos;un stage de 6 mois avec
+          pré-embauche,
+          <br />
+          ou d&apos;un emploi en tant que développeur logiciel ou Full-Stack.
         </div>
       </motion.div>
       <FloatingDock
