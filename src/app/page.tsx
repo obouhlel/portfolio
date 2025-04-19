@@ -35,7 +35,7 @@ export default function Home() {
           Oussama BOUHLEL
         </div>
         <div className="font-extralight text-base md:text-4xl text-neutral-200 py-4">
-          Déveoppeur Logiciel
+          Développeur Logiciel
         </div>
       </motion.div>
       <FloatingDock
