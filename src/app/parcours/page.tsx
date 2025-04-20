@@ -3,6 +3,7 @@ import { Timeline } from "@/components/ui/timeline";
 import { TimelineEntry } from "@/types/timeline-entry";
 import Image from "next/image";
 import { Youtube } from "lucide-react";
+import Stack from "@/components/ui/stack";
 
 export default function Page() {
   const data: Array<TimelineEntry> = [
@@ -127,27 +128,13 @@ export default function Page() {
             <span className="font-bold">Stack :</span>
           </h3>
           <div className="flex flex-wrap gap-2 mt-2">
-            <span className="px-3 py-1 rounded-full bg-blue-600 text-white font-medium">
-              Python
-            </span>
-            <span className="px-3 py-1 rounded-full bg-yellow-500 text-white font-medium">
-              JavaScript
-            </span>
-            <span className="px-3 py-1 rounded-full bg-blue-400 text-white font-medium">
-              PostgreSQL
-            </span>
-            <span className="px-3 py-1 rounded-full bg-green-700 text-white font-medium">
-              Django
-            </span>
-            <span className="px-3 py-1 rounded-full bg-red-500 text-white font-medium">
-              API
-            </span>
-            <span className="px-3 py-1 rounded-full bg-blue-500 text-white font-medium">
-              CSS
-            </span>
-            <span className="px-3 py-1 rounded-full bg-orange-600 text-white font-medium">
-              HTML
-            </span>
+            <Stack>Python</Stack>
+            <Stack>JavaScript</Stack>
+            <Stack>PostgreSQL</Stack>
+            <Stack>Django</Stack>
+            <Stack>API</Stack>
+            <Stack>CSS</Stack>
+            <Stack>HTML</Stack>
           </div>
           <p className="text-lg text-gray-700 dark:text-white text-left pt-5">
             Le dernier projet à l&apos;école 42 m&apos;a permis de découvrir le
@@ -172,33 +159,15 @@ export default function Page() {
             <span className="font-bold">Stack :</span>
           </h3>
           <div className="flex flex-wrap gap-2 mt-2">
-            <span className="px-3 py-1 rounded-full bg-blue-600 text-white font-medium">
-              Python
-            </span>
-            <span className="px-3 py-1 rounded-full bg-yellow-600 text-white font-medium">
-              TypeScript
-            </span>
-            <span className="px-3 py-1 rounded-full bg-green-500 text-white font-medium">
-              Vue.js
-            </span>
-            <span className="px-3 py-1 rounded-full bg-orange-700 text-white font-medium">
-              Rust
-            </span>
-            <span className="px-3 py-1 rounded-full bg-purple-600 text-white font-medium">
-              Playwright
-            </span>
-            <span className="px-3 py-1 rounded-full bg-blue-800 text-white font-medium">
-              Docker
-            </span>
-            <span className="px-3 py-1 rounded-full bg-green-600 text-white font-medium">
-              Nuxt.js
-            </span>
-            <span className="px-3 py-1 rounded-full bg-black text-white font-medium">
-              Next.js
-            </span>
-            <span className="px-3 py-1 rounded-full bg-indigo-500 text-white font-medium">
-              CI/CD
-            </span>
+            <Stack>Python</Stack>
+            <Stack>TypeScript</Stack>
+            <Stack>Vue.js</Stack>
+            <Stack>Rust</Stack>
+            <Stack>Playwright</Stack>
+            <Stack>Docker</Stack>
+            <Stack>Nuxt.js</Stack>
+            <Stack>Next.js</Stack>
+            <Stack>CI/CD</Stack>
           </div>
           <p className="text-lg text-gray-700 dark:text-white text-left pt-5">
             J&apos;ai travaillé dans un laboratoire de recherche et

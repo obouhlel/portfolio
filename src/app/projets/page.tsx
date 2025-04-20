@@ -1,6 +1,32 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import ProjectCard from "@/components/ui/projet-card";
+
+const projects = [
+  {
+    title: "Hypertube",
+    status: "Projet en cours",
+    description:
+      "Hypertube est une plateforme de streaming vidéo permettant aux utilisateurs de rechercher et visionner des films via le protocole BitTorrent. L'application télécharge les films à la demande et les stocke temporairement sur le serveur.",
+    stacks: ["Node.js", "AdonisJS", "Inertia.js", "TypeScript", "React"],
+    link: "https://hypertube.obouhlel.xyz",
+  },
+  {
+    title: "Datascience X Logistic Regression",
+    description:
+      "Un projet d'analyse de données et de machine learning inspiré de Harry Potter. Ce projet implémente un modèle de régression logistique pour prédire la maison de Poudlard d'un élève à partir de ses caractéristiques. Il comprend des visualisations de données, une analyse exploratoire et un classificateur entraîné avec des méthodes statistiques.",
+    stacks: ["Python", "Pandas", "NumPy", "Matplotlib"],
+    link: "https://github.com/obouhlel/dslr",
+  },
+  {
+    title: "Random Pokemon generator",
+    description:
+      "Un site web, où des pokémon apparaise avec leur son avec une petite animation, en utilisant axios pour faire des requete API.",
+    stacks: ["React", "Next.js", "Framer Motion", "TypeScript"],
+    link: "https://oustopie.xyz/",
+  },
+];
 
 export default function Page() {
   return (
@@ -20,12 +46,8 @@ export default function Page() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h2 className="text-2xl font-semibold text-black dark:text-white mb-2">
-            En cours de développement
-          </h2>
           <p className="text-black dark:text-white">
-            Cette section est actuellement en construction. Revenez bientôt pour
-            découvrir mes projets !<br /> Vous pouvez consulter mon{" "}
+            Vous pouvez consulter mon{" "}
             <a
               href="https://github.com/obouhlel"
               target="_blank"
@@ -34,7 +56,7 @@ export default function Page() {
             >
               GitHub
             </a>{" "}
-            pour voir mes projets en cours.
+            pour découvrir plus de projet.
           </p>
         </motion.div>
         <motion.div
@@ -44,88 +66,9 @@ export default function Page() {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <motion.div
-              className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
-              whileHover={{ scale: 1.03 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              <h2 className="text-2xl font-semibold text-black dark:text-white mb-2 text-center">
-                Hypertube
-              </h2>
-              <p className="text-red-700 dark:text-red-400 text-center italic">
-                Projet en cours
-              </p>
-              <p className="text-black dark:text-white text-left">
-                Hypertube est un projet de plateforme de streaming vidéo.
-              </p>
-              <div className="text-white mt-2 text-center">
-                <span className="bg-green-800 text-white text-xs px-2 py-1 rounded mr-1">
-                  Node.js
-                </span>
-                <span className="bg-purple-800 text-white text-xs px-2 py-1 rounded mr-1">
-                  AdonisJS
-                </span>
-                <span className="bg-blue-800 text-white text-xs px-2 py-1 rounded mr-1">
-                  Inertia.js
-                </span>
-                <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded mr-1">
-                  TypeScript
-                </span>
-                <span className="bg-cyan-800 text-white text-xs px-2 py-1 rounded mr-1">
-                  React
-                </span>
-              </div>
-              <div className="text-center">
-                <motion.a
-                  href="https://hypertube.obouhlel.xyz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md mt-4 inline-block transition-colors duration-300"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Voir le projet
-                </motion.a>
-              </div>
-            </motion.div>
-            <motion.div
-              className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
-              whileHover={{ scale: 1.03 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              <h2 className="text-2xl font-semibold text-black dark:text-white mb-2 text-center">
-                Datascience X Logistic Regression
-              </h2>
-              <p className="text-black dark:text-white text-left">
-                Hypertube est un projet de plateforme de streaming vidéo.
-              </p>
-              <div className="text-white mt-2 text-center">
-                <span className="bg-blue-800 text-white text-xs px-2 py-1 rounded mr-1">
-                  Python
-                </span>
-                <span className="bg-green-600 text-white text-xs px-2 py-1 rounded mr-1">
-                  Pandas
-                </span>
-                <span className="bg-yellow-600 text-white text-xs px-2 py-1 rounded mr-1">
-                  NumPy
-                </span>
-                <span className="bg-red-600 text-white text-xs px-2 py-1 rounded mr-1">
-                  Matplotlib
-                </span>
-              </div>
-              <div className="text-center">
-                <motion.a
-                  href="https://github.com/obouhlel/dslr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md mt-4 inline-block transition-colors duration-300"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Voir le projet
-                </motion.a>
-              </div>
-            </motion.div>
+            {projects.map((project, index) => (
+              <ProjectCard key={index} {...project} />
+            ))}
           </div>
         </motion.div>
       </div>
