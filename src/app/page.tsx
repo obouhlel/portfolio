@@ -40,6 +40,12 @@ export default function Home() {
           <br />
           ou d&apos;un emploi en tant que développeur logiciel ou Full-Stack.
         </div>
+        <a
+          href="/CV.pdf"
+          className="px-8 py-3 rounded-full bg-white dark:bg-gray-600 text-black dark:text-white font-medium text-lg hover:bg-neutral-200 hover:dark:bg-gray-700 transition-colors"
+        >
+          Voir mon CV
+        </a>
       </motion.div>
       <FloatingDock
         items={items}

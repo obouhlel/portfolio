@@ -29,6 +29,11 @@ const stackColors: { [key: string]: string } = {
   Docker: "bg-blue-800",
   Nuxt: "bg-green-600",
   CI: "bg-indigo-500",
+  Bun: "bg-amber-600",
+  Fastify: "bg-red-600",
+  Redis: "bg-red-700",
+  Prisma: "bg-gray-400",
+  "Discord.js": "bg-yellow-500",
 };
 
 export default function Stack({ children }: StackProps) {
