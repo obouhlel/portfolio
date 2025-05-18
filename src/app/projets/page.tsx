@@ -5,12 +5,29 @@ import ProjectCard from "@/components/ui/projet-card";
 
 const projects = [
   {
+    title: "Bot discord",
+    status: "Projet en cours",
+    description:
+      "Bot Discord multifonctions développé avec Discord.js, utilisant une architecture moderne avec Bun, TypeScript et Fastify. Intègre Prisma pour la gestion de base de données PostgreSQL et Redis pour le cache.",
+    stacks: [
+      "Bun",
+      "TypeScript",
+      "Discord.js",
+      "Fastify",
+      "Prisma",
+      "Redis",
+      "PostgreSQL",
+      "Docker",
+    ],
+    link: "https://github.com/obouhlel/discord-bot",
+  },
+  {
     title: "Hypertube",
     status: "Projet en cours",
     description:
       "Hypertube est une plateforme de streaming vidéo permettant aux utilisateurs de rechercher et visionner des films via le protocole BitTorrent. L'application télécharge les films à la demande et les stocke temporairement sur le serveur.",
     stacks: ["Node.js", "AdonisJS", "Inertia.js", "TypeScript", "React"],
-    link: "https://hypertube.obouhlel.xyz",
+    link: "https://github.com/obouhlel/hypertube",
   },
   {
     title: "Datascience X Logistic Regression",
